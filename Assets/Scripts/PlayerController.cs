@@ -77,8 +77,11 @@ public class PlayerController : MonoBehaviour
         if (!IsGrounded()) return;
 
         _xMov = Input.GetAxisRaw("Horizontal");
-        if (!_canMoveLeft && _xMov < 0) return;
-        if (!_canMoveRight && _xMov > 0) return;
+        if (Input.GetKey(KeyCode.E))
+        { 
+            if (!_canMoveLeft && _xMov < 0) return;
+            if (!_canMoveRight && _xMov > 0) return;
+        }
 
         Vector3 moveHorizontal = transform.right * _xMov;
 
