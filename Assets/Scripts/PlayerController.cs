@@ -48,6 +48,12 @@ public class PlayerController : MonoBehaviour
         GetPlayerInput();
         MovePlayer();
         Grab();
+
+        if (!_isRotating)
+        {
+            Vector3 _forceZ = new Vector3(transform.position.x, transform.position.y, -0.5f);
+            transform.position = _forceZ;
+        }
     }
     private void EnableMove()
     {
