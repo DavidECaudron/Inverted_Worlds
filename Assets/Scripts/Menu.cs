@@ -4,7 +4,7 @@ public class Menu : MonoBehaviour
 {
     public void StartGame()
     {
-        LevelLoader.instance.LoadScene("Level01");
+        LevelLoader.instance.LoadScene("Level03");
     }
 
     public void Option()
