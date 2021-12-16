@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5153477718473014789}
   - component: {fileID: 5153477718473014815}
   - component: {fileID: 5153477718473014788}
+  - component: {fileID: 4142214920128364006}
   m_Layer: 6
   m_Name: PickableCube
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5153477718473014814}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.63, y: 12.54, z: -1.5}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
@@ -138,6 +139,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ee9f29d535a5b94b93dd0359d9f9a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4142214920128364006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5153477718473014814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fb27dba77096540999f92f3e1cf5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4803393433646076820
