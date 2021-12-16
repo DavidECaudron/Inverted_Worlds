@@ -4,6 +4,7 @@ public class PlayerUI : MonoBehaviour
 {
     public static PlayerUI instance;
     public GameObject pauseMenu;
+    public GameObject interactUI;
 
     private void Awake()
     {

@@ -163,6 +163,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        InteractableObject interact = other.gameObject.GetComponent<InteractableObject>();
+        if(interact != null)
+        {
+            interact.InstantiateUI(transform);
+            return;
+        }
+
+
         MovableObject moveObj = other.gameObject.GetComponent<MovableObject>();
         if (moveObj != null)
         {
@@ -172,6 +180,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        InteractableObject interact = other.gameObject.GetComponent<InteractableObject>();
+        if (interact != null)
+        {
+            interact.DestroyInstance();
+            return;
+        }
+
         MovableObject moveObj = other.gameObject.GetComponent<MovableObject>();
         if (moveObj != null)
         {
