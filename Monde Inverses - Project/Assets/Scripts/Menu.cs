@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class Menu : MonoBehaviour
+{
+    public void StartGame()
+    {
+        LevelLoader.instance.LoadScene("Level01");
+    }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+
+#else
+        Application.Quit();
+#endif
+    }
+
+}
