@@ -22,22 +22,6 @@ public class GameManager : MonoBehaviour
         LevelLoader.instance.OnSceneIsLoaded += SetupLevel;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (FindObjectOfType<Menu>() == null)
-            {
-                HandlePauseMenu();
-            }
-        }
-    }
-
-    private void HandlePauseMenu()
-    {
-        PlayerUI.instance.HandlePauseMenu();
-    }
-
     private void SetupLevel()
     {
         if (LevelLoader.instance.InMainMenu()) return;

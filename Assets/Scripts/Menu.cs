@@ -7,6 +7,11 @@ public class Menu : MonoBehaviour
         LevelLoader.instance.LoadScene("Level01");
     }
 
+    public void Option()
+    {
+        PlayerUI.instance.HandleOptionMenu();
+    }
+
     public void Quit()
     {
 #if UNITY_EDITOR
