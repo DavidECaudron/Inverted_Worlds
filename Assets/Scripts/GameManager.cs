@@ -63,5 +63,8 @@ public class GameManager : MonoBehaviour
 
         RespawnPoint respawn = FindObjectOfType<RespawnPoint>();
         player.transform.position = respawn.transform.position;
+
+        PlayerUI.instance.keyUI.SetActive(false);
+        PlayerUI.instance.missingKeyUI.SetActive(true);
     }
 }
