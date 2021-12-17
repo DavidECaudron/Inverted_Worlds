@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4531183932161868065}
   - component: {fileID: 4531183932161868079}
   m_Layer: 0
-  m_Name: DeathZone
+  m_Name: DeathZone 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,11 +187,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ba4a6eea2649e574390c5fdd201faa5b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 27d35dba2af776548b10e1228bcfea27, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bed5403b2bb9a94286b36747be8b376, type: 2}
     - target: {fileID: -7511558181221131132, guid: ba4a6eea2649e574390c5fdd201faa5b, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 27d35dba2af776548b10e1228bcfea27, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bed5403b2bb9a94286b36747be8b376, type: 2}
     - target: {fileID: 919132149155446097, guid: ba4a6eea2649e574390c5fdd201faa5b, type: 3}
       propertyPath: m_Name
       value: Mod_Stalagtites
