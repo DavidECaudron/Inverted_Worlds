@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamTrigger : MonoBehaviour
+public class CamTriggerExit : MonoBehaviour
 {
     PlayerCamera _playerCamera;
     PlayerController _playerController;
-    bool _isTriggered = false;
+    //bool _isTriggered = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        _playerCamera = GetComponent<PlayerCamera>();
+        _playerCamera = GameObject.FindObjectOfType<PlayerCamera>();
         _playerController = GameObject.FindObjectOfType<PlayerController>();
     }
 
@@ -23,17 +23,13 @@ public class CamTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PickableSphere") && _isTriggered == false)
+        
+        if (other.CompareTag("PickableSphere") /*&& _isTriggered == true*/)
         {
-            _isTriggered = true;
-            _playerController.canMove = false;
-            _playerCamera._playerTransform = GameObject.FindWithTag("PickableSphere").transform;
-        }
-        if (other.CompareTag("PickableSphere") && _isTriggered == true)
-        {
-            _isTriggered = false;
+            Debug.Log("UnTriggered");
             _playerController.canMove = true;
             _playerCamera._playerTransform = GameObject.FindWithTag("Player").transform;
         }
     }
+    
 }
