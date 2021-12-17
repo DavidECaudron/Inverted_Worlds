@@ -5832,10 +5832,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 646500871926413121, guid: e6d15d363fb681142b14a969114589fa, type: 3}
-      propertyPath: _destructionSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 0def441cab0f735499d141eb2fa75490, type: 3}
     - target: {fileID: 646500871926413122, guid: e6d15d363fb681142b14a969114589fa, type: 3}
       propertyPath: m_Name
       value: DestroyableObject

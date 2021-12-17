@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -29,6 +27,7 @@ public class GravityObject : MonoBehaviour
     {
         if (_gravityDisable) return;
         _rb.useGravity = false;
+        _rb.velocity = Vector3.zero;
     }
 
     public void ForceDisableGravity()
