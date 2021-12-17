@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b1a9b6e52c1a247acadbf5184d916f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destructionSound: {fileID: 0}
+  _destructionSound: {fileID: 8300000, guid: 0def441cab0f735499d141eb2fa75490, type: 3}
+  _destruction_vfx: {fileID: 3562677817345353254, guid: dd7df5afa9e7eeb488558cfc248e438e, type: 3}
 --- !u!65 &646500871926413127
 BoxCollider:
   m_ObjectHideFlags: 0
