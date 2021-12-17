@@ -143,6 +143,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.E) && _isPickable)
             {
                 _animator.SetBool(_animatorGrabParamater, false);
+                _animator.Play("Idle");
             }
         }
     }
