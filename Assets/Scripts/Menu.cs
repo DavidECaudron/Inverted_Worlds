@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         AudioManager.instance.PlayClipAt(_clickSound, transform.position);
-        LevelLoader.instance.LoadScene("Level03");
+        LevelLoader.instance.LoadScene("Level01");
     }
 
     public void Option()
