@@ -76,6 +76,11 @@ public class PlayerController : MonoBehaviour
         _animator.SetTrigger(triggerName);
     }
 
+    public void BoolAnimation(string boolName, bool boolValue)
+    {
+        _animator.SetBool(boolName, boolValue);
+    }
+
     private void GetPlayerInput()
     {
         _velocity = Vector3.zero;

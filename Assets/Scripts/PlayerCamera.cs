@@ -75,19 +75,23 @@ public class PlayerCamera : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow) && !_cameraMoveTop)
         {
             _cameraMoveBot = true;
+            _playerController.BoolAnimation("LookDown", true);
         }
         if (Input.GetKeyUp(KeyCode.DownArrow) && !_cameraMoveTop)
         {
             _cameraMoveBot = false;
+            _playerController.BoolAnimation("LookDown", false);
         }
 
         if (Input.GetKey(KeyCode.UpArrow) && !_cameraMoveBot)
         {
             _cameraMoveTop = true;
+            _playerController.BoolAnimation("LookUp", true);
         }
         if (Input.GetKeyUp(KeyCode.UpArrow) && !_cameraMoveBot)
         {
             _cameraMoveTop = false;
+            _playerController.BoolAnimation("LookUp", false);
         }
 
         if (_cameraMoveTop)
