@@ -15,6 +15,7 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] Slider _musicSlider;
     [SerializeField] private AudioMixerGroup _soundMixer;
     [SerializeField] private AudioMixerGroup _musicMixer;
+    [SerializeField] AudioClip _clickSound;
 
     private void Awake()
     {
@@ -59,11 +60,13 @@ public class PlayerUI : MonoBehaviour
 
     public void HandlePauseMenu()
     {
+        AudioManager.instance.PlayClipAt(_clickSound, transform.position);
         pauseMenu.SetActive(!pauseMenu.activeSelf);
     }
 
     public void HandleOptionMenu()
     {
+        AudioManager.instance.PlayClipAt(_clickSound, transform.position);
         optionMenu.SetActive(!optionMenu.activeSelf);
     }
 

@@ -494,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707b7e23d4f975946ad968990cfc7596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickSound: {fileID: 8300000, guid: 550cb17f07d999746b7ae2b6f77a5fb3, type: 3}
 --- !u!1 &1501759086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2487,7 @@ MonoBehaviour:
   _musicSlider: {fileID: 8443367094386435797}
   _soundMixer: {fileID: 5487160701004141314, guid: 725b05522dbe9df49b366f569a7c39a1, type: 2}
   _musicMixer: {fileID: 4444230713984971709, guid: 725b05522dbe9df49b366f569a7c39a1, type: 2}
+  _clickSound: {fileID: 8300000, guid: 550cb17f07d999746b7ae2b6f77a5fb3, type: 3}
 --- !u!1 &7517233236534745477
 GameObject:
   m_ObjectHideFlags: 0

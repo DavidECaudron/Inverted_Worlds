@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] AudioClip _clickSound;
     private void OnEnable()
     {
         Time.timeScale = 0;
@@ -15,17 +16,20 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        AudioManager.instance.PlayClipAt(_clickSound, transform.position);
         gameObject.SetActive(false);
     }
 
     public void RestartLevel()
     {
+        AudioManager.instance.PlayClipAt(_clickSound, transform.position);
         LevelLoader.instance.LoadScene(SceneManager.GetActiveScene().name);
         Resume();
     }
 
     public void MainMenu()
     {
+        AudioManager.instance.PlayClipAt(_clickSound, transform.position);
         LevelLoader.instance.LoadScene("Menu");
         Resume();
     }

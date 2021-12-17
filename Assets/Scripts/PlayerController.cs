@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] AudioClip[] _footstepSounds;
+    [SerializeField] AudioClip _grabSound;
     [SerializeField] CharacterController _characterController;
     [SerializeField] float _moveSpeed;
     [SerializeField] LayerMask _groundMask;
@@ -133,6 +134,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && _isPickable)
         {
+            AudioManager.instance.PlayClipAt(_grabSound, transform.position);
             _animator.SetBool(_animatorGrabParamater, true);
             _animator.SetTrigger(_animatorTrigGrabParamater);
         }

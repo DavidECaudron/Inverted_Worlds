@@ -167,6 +167,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1a2255e923bd5dc4ea47cee6fa873ef4, type: 3}
   - {fileID: 8300000, guid: 6ec4a62bf211d9840a1fd47b132a1ef5, type: 3}
   - {fileID: 8300000, guid: 950a050cd4f4fac4bb298a6c8eb4821a, type: 3}
+  _grabSound: {fileID: 8300000, guid: a6e111c848195654bb6174c1a8999423, type: 3}
   _characterController: {fileID: 1131734086}
   _moveSpeed: 5
   _groundMask:
