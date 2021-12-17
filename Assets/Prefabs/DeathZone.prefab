@@ -70,6 +70,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike_Particules
       objectReference: {fileID: 0}
+    - target: {fileID: 2166669461813368310, guid: 6f6e1188db8adf44b89e3cd9c951b18b, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166669461813368310, guid: 6f6e1188db8adf44b89e3cd9c951b18b, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2166669461813368311, guid: 6f6e1188db8adf44b89e3cd9c951b18b, type: 3}
       propertyPath: m_RootOrder
       value: 1
