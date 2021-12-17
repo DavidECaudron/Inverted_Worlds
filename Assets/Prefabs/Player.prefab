@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deathSound: {fileID: 8300000, guid: ea516ec2e98e9b94bb9770c478868ab7, type: 3}
+  _death_vfx: {fileID: 2114883467800691736, guid: 42d5de07c00e7404db7442e3f63a666e, type: 3}
   haveKeyForNextLevel: 0
 --- !u!1001 &482955527
 PrefabInstance:
