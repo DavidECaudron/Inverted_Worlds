@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WallLimitR
   - WallLimitL
+  - PickableSphere
   layers:
   - Default
   - TransparentFX

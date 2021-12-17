@@ -8,7 +8,7 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] private float _cameraDown = 5.0f;
     [SerializeField] private float _cameraMoveSpeed = 10f;
 
-    private Transform _playerTransform;
+    public Transform _playerTransform;
     private PlayerController _playerController;
     private Vector3 _tempPos;
     Camera _playerCamera;
