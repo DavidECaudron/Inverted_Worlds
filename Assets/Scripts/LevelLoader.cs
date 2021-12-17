@@ -35,6 +35,11 @@ public class LevelLoader : MonoBehaviour
         return SceneManager.GetActiveScene().name == "Menu";
     }
 
+    public bool InCreditMenu()
+    {
+        return SceneManager.GetActiveScene().name == "Credit";
+    }
+
     public void LoadScene(string sceneName)
     {
         if (_onLoadingScene) return;

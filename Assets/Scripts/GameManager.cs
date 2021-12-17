@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private void SetupLevel()
     {
-        if (LevelLoader.instance.InMainMenu()) return;
+        if (LevelLoader.instance.InMainMenu() || LevelLoader.instance.InCreditMenu()) return;
 
         GetRespawnPointInScene();
         SpawnPlayer();
