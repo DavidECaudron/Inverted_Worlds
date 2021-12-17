@@ -3738,7 +3738,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-31310
+  m_Name: pb_Mesh-112622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7246,6 +7246,10 @@ PrefabInstance:
     - target: {fileID: 3245929508764718467, guid: b049d48881e327b47a9f11cc8d710112, type: 3}
       propertyPath: m_Tangents.Array.data[307].z
       value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245929508764718469, guid: b049d48881e327b47a9f11cc8d710112, type: 3}
+      propertyPath: _rotateTime
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3245929508764718478, guid: b049d48881e327b47a9f11cc8d710112, type: 3}
       propertyPath: m_Mesh

@@ -2758,7 +2758,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-202744
+  m_Name: pb_Mesh-89326
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3452,6 +3452,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1629155584}
+    - target: {fileID: 8457216488383726041, guid: 579d52b3ab97afa4ab3670dff7009839, type: 3}
+      propertyPath: _rotateTime
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8457216488383726042, guid: 579d52b3ab97afa4ab3670dff7009839, type: 3}
       propertyPath: m_Name
       value: Level 2
