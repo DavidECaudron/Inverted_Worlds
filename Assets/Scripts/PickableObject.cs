@@ -42,6 +42,16 @@ public class PickableObject : MonoBehaviour
         float distance = Vector3.Distance(gameObject.transform.position, _player.transform.position);
         return distance;
     }
+    public bool IsObjectAtRight()
+    {
+
+
+        if (_player.transform.position.x < gameObject.transform.position.x)
+        {
+            return false;
+        }
+        else { return true; }
+    }
 
     bool IsObjectPickable(float Distance)
     {
