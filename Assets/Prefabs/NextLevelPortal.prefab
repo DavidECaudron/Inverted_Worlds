@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nextLevelName: Pirson
+  _openDoorSound: {fileID: 8300000, guid: e0d8e9a9c6d7bfb4581eab4f411902fe, type: 3}
 --- !u!1001 &8078155518576337924
 PrefabInstance:
   m_ObjectHideFlags: 0
