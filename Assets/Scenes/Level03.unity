@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6045845759887111751, guid: 9f8034055c960ab44b228b0814e8891e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.862
+      value: 9.983
       objectReference: {fileID: 0}
     - target: {fileID: 6045845759887111751, guid: 9f8034055c960ab44b228b0814e8891e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1125,7 +1125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112612712931335977, guid: c91ab5f8c1549a54095ee17e2bfb025b, type: 3}
       propertyPath: _nextLevelName
-      value: Menu
+      value: Credit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91ab5f8c1549a54095ee17e2bfb025b, type: 3}
