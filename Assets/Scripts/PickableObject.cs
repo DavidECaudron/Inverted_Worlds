@@ -48,9 +48,9 @@ public class PickableObject : MonoBehaviour
 
         if (_player.transform.position.x < gameObject.transform.position.x)
         {
-            return false;
+            return true;
         }
-        else { return true; }
+        else { return false; }
     }
 
     bool IsObjectPickable(float Distance)
