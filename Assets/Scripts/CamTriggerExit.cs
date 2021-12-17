@@ -29,6 +29,7 @@ public class CamTriggerExit : MonoBehaviour
             Debug.Log("UnTriggered");
             _playerController.canMove = true;
             _playerCamera._playerTransform = GameObject.FindWithTag("Player").transform;
+            _playerCamera._cameraMoveSpeed = 10.0f;
         }
     }
     

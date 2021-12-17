@@ -29,6 +29,7 @@ public class CamTriggerEnter : MonoBehaviour
             //_isTriggered = true;
             _playerController.canMove = false;
             _playerCamera._playerTransform = other.transform;
+            _playerCamera._cameraMoveSpeed = 20.0f;
        
         }
        

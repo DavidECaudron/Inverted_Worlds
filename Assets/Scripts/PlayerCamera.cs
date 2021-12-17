@@ -6,7 +6,7 @@ public class PlayerCamera : MonoBehaviour
 {
     [SerializeField] private float _cameraUp = 10.0f;
     [SerializeField] private float _cameraDown = 5.0f;
-    [SerializeField] private float _cameraMoveSpeed = 10f;
+    [SerializeField] public float _cameraMoveSpeed = 10f;
 
     public Transform _playerTransform;
     private PlayerController _playerController;
