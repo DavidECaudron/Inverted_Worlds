@@ -161,12 +161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _footstepSounds:
-  - {fileID: 8300000, guid: 4322102398ee7df4e94346b1e6b4bd0a, type: 3}
-  - {fileID: 8300000, guid: cae597b96cca2a440a8091b6d0a498ee, type: 3}
-  - {fileID: 8300000, guid: 709f658c45e2f194f823b7bb3cbd2150, type: 3}
-  - {fileID: 8300000, guid: 1a2255e923bd5dc4ea47cee6fa873ef4, type: 3}
-  - {fileID: 8300000, guid: 6ec4a62bf211d9840a1fd47b132a1ef5, type: 3}
   - {fileID: 8300000, guid: 950a050cd4f4fac4bb298a6c8eb4821a, type: 3}
+  - {fileID: 8300000, guid: 63dd1e81d63b6224c9d56dbf99aac691, type: 3}
+  - {fileID: 8300000, guid: 8b29a20d086953241a0c364e6fcbcab0, type: 3}
   _grabSound: {fileID: 8300000, guid: a6e111c848195654bb6174c1a8999423, type: 3}
   _characterController: {fileID: 1131734086}
   _moveSpeed: 5
