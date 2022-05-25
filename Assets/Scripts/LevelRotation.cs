@@ -36,7 +36,13 @@ public class LevelRotation : MonoBehaviour
 
     void Rotation()
     {
-        if (Input.GetKeyDown(KeyCode.A) && _canRotate && _playerController.PlayerIsGrounded()) 
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            StartCoroutine(RotateCoroutine());
+        }
+
+            if (Input.GetKeyDown(KeyCode.A) && _canRotate && _playerController.PlayerIsGrounded()) 
         {
             StartCoroutine(RotateCoroutine());
         }

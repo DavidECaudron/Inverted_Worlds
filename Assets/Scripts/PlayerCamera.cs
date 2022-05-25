@@ -127,6 +127,7 @@ public class PlayerCamera : MonoBehaviour
         CheckCameraWithLevelLimit();
 
         _tempPos.y = _lookMovement.y;
+        if (Vector3.Distance(_tempPos, transform.position) < .01f) return;
         transform.position = _tempPos;
     }
 
