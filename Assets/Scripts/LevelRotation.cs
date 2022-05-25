@@ -36,14 +36,9 @@ public class LevelRotation : MonoBehaviour
 
     void Rotation()
     {
-
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && _canRotate && _playerController.PlayerIsGrounded())
         {
-            StartCoroutine(RotateCoroutine());
-        }
-
-            if (Input.GetKeyDown(KeyCode.A) && _canRotate && _playerController.PlayerIsGrounded()) 
-        {
+            _playerController.ForceIdle();
             StartCoroutine(RotateCoroutine());
         }
     }
@@ -56,9 +51,9 @@ public class LevelRotation : MonoBehaviour
         float i = 0;
         while (i < 180.0f)
         {
-            transform.RotateAround(_pivot.transform.position, Vector3.right, _degres*Time.deltaTime);
-            i += _degres*Time.deltaTime;
-            yield return new WaitForSeconds(_rotateTime/_degres*Time.deltaTime);
+            transform.RotateAround(_pivot.transform.position, Vector3.right, _degres * Time.deltaTime);
+            i += _degres * Time.deltaTime;
+            yield return new WaitForSeconds(_rotateTime / _degres * Time.deltaTime);
         }
 
         if (_isTop)

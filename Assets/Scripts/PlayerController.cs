@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -24,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private string _animatorTrigGrabParamater = "TrigGrab";
 
     private Rigidbody _platformRb;
-    PickableObject _pickableObject;
+    List<PickableObject> _pickableObject;
 
     public bool CameraGrounded;
     bool _isPickable;
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        _pickableObject = FindObjectOfType<PickableObject>();
+        _pickableObject = FindObjectsOfType<PickableObject>().ToList();
         LevelLoader.instance.OnLoadLevelCompleted += EnableMove;
         LevelLoader.instance.OnStartLoadLevel += DisableVoid;
 
@@ -44,7 +46,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        _isPickable = _pickableObject != null ? _pickableObject.IsObjectPickable() : false;
+        _isPickable = false;
+        foreach (var item in _pickableObject)
+        {
+            if(item != null)
+            {
+                _isPickable = item.IsObjectPickable();
+                if (_isPickable) break;
+            }
+        }
+
+        //_isPickable = _pickableObject != null ? _pickableObject.IsObjectPickable() : false;
         if (!canMove) return;
         GetPlayerInput();
         MovePlayer();
@@ -133,6 +145,12 @@ public class PlayerController : MonoBehaviour
     void Animate(Vector3 direction)
     {
         _animator.SetFloat(_animatorMoveSpeedParamater, Mathf.Abs(direction.normalized.x));
+    }
+
+    public void ForceIdle()
+    {
+        _animator.SetBool(_animatorGrabParamater, false);
+        _animator.Play("Idle");
     }
 
     void Grab()
